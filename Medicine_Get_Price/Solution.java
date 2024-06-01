@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        // Read values for Medicine objects and disease
+
         Scanner scanner = new Scanner(System.in);
         Medicine[] medicines = new Medicine[4];
         for (int i = 0; i < 4; i++) {
@@ -20,10 +20,10 @@ public class Solution {
         }
         String disease = scanner.next();
 
-        // Call the getPriceByDisease method
+
         List<Integer> prices = getPriceByDisease(medicines, disease);
 
-        // Print the result
+
         for (Integer price : prices) {
             System.out.println(price);
         }
