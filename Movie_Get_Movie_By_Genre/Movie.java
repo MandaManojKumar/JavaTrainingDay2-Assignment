@@ -6,7 +6,7 @@ class Movie {
     private String genre;
     private int budget;
 
-    // Parameterized constructor
+
     public Movie(String movieName, String company, String genre, int budget) {
         this.movieName = movieName;
         this.company = company;
@@ -14,7 +14,7 @@ class Movie {
         this.budget = budget;
     }
 
-    // Getters and setters
+
     public String getMovieName() {
         return movieName;
     }
