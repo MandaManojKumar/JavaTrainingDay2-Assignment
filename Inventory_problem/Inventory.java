@@ -6,7 +6,7 @@ class Inventory {
     private int currentQuantity;
     private int threshold;
 
-    // Parameterized constructor
+
     public Inventory(String inventoryId, int maximumQuantity, int currentQuantity, int threshold) {
         this.inventoryId = inventoryId;
         this.maximumQuantity = maximumQuantity;
@@ -14,7 +14,7 @@ class Inventory {
         this.threshold = threshold;
     }
 
-    // Getters and setters
+
     public String getInventoryId() {
         return inventoryId;
     }
