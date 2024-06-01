@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        // Read values for NavalVessel objects, percentage, and purpose
+
         Scanner scanner = new Scanner(System.in);
         NavalVessel[] navalVessels = new NavalVessel[4];
         for (int i = 0; i < 4; i++) {
@@ -22,11 +22,11 @@ public class Solution {
         int percentage = scanner.nextInt();
         String purpose = scanner.next();
 
-        // Call the findAvgVoyagesByPct method
-        double avgVoyages = findAvgVoyagesByPct(navalVessels, percentage);
-        System.out.println((int) avgVoyages); // Convert double to int
 
-        // Call the findVesselByGrade method
+        double avgVoyages = findAvgVoyagesByPct(navalVessels, percentage);
+        System.out.println((int) avgVoyages); 
+
+
         NavalVessel vessel = findVesselByGrade(navalVessels, purpose);
         if (vessel != null) {
             System.out.println(vessel.getVesselName() + "%" + vessel.getClassification());
@@ -34,7 +34,7 @@ public class Solution {
             System.out.println("No Naval Vessel is available with the specified purpose");
         }
 
-        // Close the scanner
+
         scanner.close();
     }
 
