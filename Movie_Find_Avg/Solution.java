@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        // Read values for Movie objects, director, rating, and budget
+
         Scanner scanner = new Scanner(System.in);
         Movie[] movies = new Movie[4];
         for (int i = 0; i < 4; i++) {
             int movieId = scanner.nextInt();
-            scanner.nextLine(); // Consume newline character
+            scanner.nextLine(); 
             String director = scanner.nextLine();
             int rating = scanner.nextInt();
             int budget = scanner.nextInt();
@@ -20,15 +20,15 @@ public class Solution {
         int rating = scanner.nextInt();
         int budget = scanner.nextInt();
 
-        // Call the findAvgBudgetByDirector method
+
         double avgBudget = findAvgBudgetByDirector(movies, director);
         if (avgBudget > 0) {
-            System.out.println((int) avgBudget); // Convert double to int
+            System.out.println((int) avgBudget); 
         } else {
             System.out.println("Sorry - The given director has not yet directed any movie");
         }
 
-        // Call the getMovieByRatingBudget method
+
         Movie movie = getMovieByRatingBudget(movies, rating, budget);
         if (movie != null) {
             System.out.println(movie.getMovieId());
@@ -36,7 +36,7 @@ public class Solution {
             System.out.println("Sorry - No movie is available with the specified rating and budget requirement");
         }
 
-        // Close the scanner
+
         scanner.close();
     }
 
