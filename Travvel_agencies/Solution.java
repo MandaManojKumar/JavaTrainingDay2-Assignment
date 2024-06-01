@@ -27,7 +27,7 @@ public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Reading input
+
         TravelAgencies[] agencies = new TravelAgencies[4];
         for (int i = 0; i < agencies.length; i++) {
             int regNo = Integer.parseInt(scanner.nextLine());
@@ -38,7 +38,7 @@ public class Solution {
             agencies[i] = new TravelAgencies(regNo, agencyName, packageType, price, flightFacility);
         }
 
-        // Calling static methods
+
         int highestPackagePrice = findAgencyWithHighestPackagePrice(agencies);
         System.out.println(highestPackagePrice);
 
