@@ -8,7 +8,7 @@ class Institution {
     private String location;
     private String grade;
 
-    // Parameterized constructor
+
     public Institution(int institutionId, String institutionName, String noOfStudentsPlaced, int noOfStudentsCleared, String location) {
         this.institutionId = institutionId;
         this.institutionName = institutionName;
@@ -17,7 +17,6 @@ class Institution {
         this.location = location;
     }
 
-    // Getters and setters
     public int getInstitutionId() {
         return institutionId;
     }
