@@ -6,7 +6,7 @@ class Medicine {
     private String disease;
     private int price;
 
-    // Parameterized constructor
+
     public Medicine(String medicineName, String batch, String disease, int price) {
         this.medicineName = medicineName;
         this.batch = batch;
@@ -14,7 +14,7 @@ class Medicine {
         this.price = price;
     }
 
-    // Getters and setters
+
     public String getMedicineName() {
         return medicineName;
     }
