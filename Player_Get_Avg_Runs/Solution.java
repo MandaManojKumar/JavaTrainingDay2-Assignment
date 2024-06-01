@@ -3,7 +3,7 @@ package Player_Get_Avg_Runs;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-//import Player_based_on_Level.Player;
+
 
 public class Solution {
 	
@@ -39,7 +39,7 @@ public class Solution {
 			obj[i].setMatchesPlayed(sc.nextInt());
 			obj[i].setRunsScored(sc.nextInt());
 		}
-		//sc.nextLine();
+
 		int target= sc.nextInt();
 		sc.close();
 		
