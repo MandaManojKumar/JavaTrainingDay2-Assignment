@@ -8,7 +8,7 @@ class NavalVessel {
     private String purpose;
     private String classification;
 
-    // Parameterized constructor
+
     public NavalVessel(int vesselId, String vesselName, int noOfVoyagesPlanned, int noOfVoyagesCompleted, String purpose) {
         this.vesselId = vesselId;
         this.vesselName = vesselName;
@@ -17,7 +17,6 @@ class NavalVessel {
         this.purpose = purpose;
     }
 
-    // Getters and setters
     public int getVesselId() {
         return vesselId;
     }
