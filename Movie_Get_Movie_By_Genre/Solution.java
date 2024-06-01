@@ -9,7 +9,7 @@ import java.util.*;
 public class Solution {
 
     public static void main(String[] args) {
-        // Read values for Movie objects and searchGenre
+
         Scanner scanner = new Scanner(System.in);
         Movie[] movies = new Movie[4];
         for (int i = 0; i < 4; i++) {
@@ -21,10 +21,8 @@ public class Solution {
         }
         String searchGenre = scanner.next();
 
-        // Call the getMovieByGenre method
         Movie[] resultMovies = getMovieByGenre(movies, searchGenre);
 
-        // Print "High Budget Movie" or "Low Budget Movie"
         for (Movie movie : resultMovies) {
             if (movie.getBudget() > 80000000) {
                 System.out.println("High Budget Movie");
@@ -33,7 +31,7 @@ public class Solution {
             }
         }
 
-        // Close the scanner
+
         scanner.close();
     }
 
