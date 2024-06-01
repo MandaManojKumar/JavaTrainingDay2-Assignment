@@ -5,27 +5,26 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        // Create an array to hold Institution objects
+
         Institution[] institutions = new Institution[4];
 
-        // Read values for Institution objects
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 4; i++) {
             int institutionId = scanner.nextInt();
-            scanner.nextLine(); // Consume newline character
+            scanner.nextLine(); 
             String institutionName = scanner.nextLine();
             String noOfStudentsPlaced = scanner.nextLine();
             int noOfStudentsCleared = scanner.nextInt();
-            scanner.nextLine(); // Consume newline character
+            scanner.nextLine(); 
             String location = scanner.nextLine();
             institutions[i] = new Institution(institutionId, institutionName, noOfStudentsPlaced, noOfStudentsCleared, location);
         }
 
-        // Read the value for location and institutionName
+
         String location = scanner.nextLine();
         String institutionName = scanner.nextLine();
 
-        // Call the methods and display the result
+
         int numClearance = findNumClearancedByLoc(institutions, location);
         if (numClearance > 0) {
             System.out.println(numClearance);
@@ -40,7 +39,7 @@ public class Solution {
             System.out.println("No Institute is available with the specified name");
         }
 
-        // Close the scanner
+
         scanner.close();
     }
 
