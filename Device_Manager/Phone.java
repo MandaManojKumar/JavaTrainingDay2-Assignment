@@ -6,7 +6,7 @@ class Phone {
     private String brand;
     private int price;
 
-    // Parameterized constructor
+
     public Phone(int phoneId, String os, String brand, int price) {
         this.phoneId = phoneId;
         this.os = os;
@@ -14,7 +14,7 @@ class Phone {
         this.price = price;
     }
 
-    // Getters and setters
+
     public int getPhoneId() {
         return phoneId;
     }
