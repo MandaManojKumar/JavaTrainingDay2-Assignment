@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        // Read values for Inventory objects and limit
         Scanner scanner = new Scanner(System.in);
         Inventory[] inventories = new Inventory[4];
         for (int i = 0; i < 4; i++) {
@@ -19,10 +18,9 @@ public class Solution {
         }
         int limit = scanner.nextInt();
 
-        // Call the replenish method
+
         Inventory[] replenishedInventories = replenish(inventories, limit);
 
-        // Print the result
         for (Inventory inventory : replenishedInventories) {
             if (inventory.getThreshold() > 75) {
                 System.out.println(inventory.getInventoryId() + " Critical Filling");
