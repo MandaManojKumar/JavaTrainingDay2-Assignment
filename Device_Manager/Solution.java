@@ -5,26 +5,26 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        // Create an array to hold Phone objects
+
         Phone[] phones = new Phone[4];
 
-        // Read values for Phone objects
+
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 4; i++) {
             int phoneId = scanner.nextInt();
-            scanner.nextLine(); // Consume newline character
+            scanner.nextLine(); 
             String os = scanner.nextLine();
             String brand = scanner.nextLine();
             int price = scanner.nextInt();
             phones[i] = new Phone(phoneId, os, brand, price);
         }
 
-        // Read the value for brand and os
-        scanner.nextLine(); // Consume newline character
+
+        scanner.nextLine(); 
         String brand = scanner.nextLine();
         String os = scanner.nextLine();
 
-        // Call the methods and display the result
+
         int priceForBrand = findPriceForGivenBrand(phones, brand);
         if (priceForBrand > 0) {
             System.out.println(priceForBrand);
